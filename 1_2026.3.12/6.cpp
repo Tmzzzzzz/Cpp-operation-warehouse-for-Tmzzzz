@@ -1,3 +1,8 @@
+/*
+六、设计一个函数，实现指数运算。如输入 2和3，则该函数输出8。
+要求：输入参数均为整数。
+*/
+
 #include <iostream>
 using namespace std;
 

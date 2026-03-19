@@ -1,3 +1,7 @@
+/*
+一、输入以下程序并运行
+*/
+
 //Program:Display greetings
 //Author(s):Fang Zequan
 //Date:3/9/2026

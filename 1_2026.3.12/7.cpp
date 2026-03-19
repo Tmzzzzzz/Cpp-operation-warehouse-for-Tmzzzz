@@ -1,3 +1,7 @@
+/*
+七、设计一个函数，把输入的2进制数转化为10进制数输出。如输入为101，则输出为5。
+*/
+
 #include <iostream>
 using namespace std;
 
