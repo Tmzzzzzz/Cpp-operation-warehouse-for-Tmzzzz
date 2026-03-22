@@ -21,7 +21,7 @@ Stack stack;
 
 #include <iostream>
 using namespace std;
-class stack{
+class Stack{
     private:
     int* arr;
     int capacity;
@@ -30,24 +30,24 @@ class stack{
     void pop();
     void push(int a);
     void print();
-    stack(){
+    Stack(){
         arr=new int[100];
         capacity=100;
         top=-1;
     };
-    ~stack(){
+    ~Stack(){
         delete[] arr;
     }
 };
 
-void stack::pop(){
+void Stack::pop(){
     if(top==-1){
         return ;
     }
     top--;
 }
 
-void stack::push(int a){
+void Stack::push(int a){
     if(top==capacity){
         capacity*=2;
         int *newArr=new int[capacity];
@@ -60,9 +60,21 @@ void stack::push(int a){
     arr[++top]=a;
 }
 
-void stack::print(){
+void Stack::print(){
     for(int i=0;i<=top;i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
+}
+
+int main()
+{
+Stack stack;
+    stack.print();  //打印栈中的所有元素，打印顺序为从栈底到栈顶；打印格式自拟
+	stack.pop();   //出栈
+	stack.push(1); //入栈
+	stack.push(2);
+	stack.print();
+	stack.pop();
+	stack.print();
 }
